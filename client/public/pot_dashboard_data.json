@@ -1,0 +1,86 @@
+{
+  "total_participantes": 2008,
+  "distribuicao_sexo": {
+    "Feminino": 1670,
+    "Masculino": 338
+  },
+  "idade_media": 35,
+  "idade_minima": 18,
+  "idade_maxima": 72,
+  "faixa_etaria": {
+    "minima": 18,
+    "maxima": 72
+  },
+  "distribuicao_idade": {
+    "18 a 29 anos": 772,
+    "30 a 39 anos": 539,
+    "40 a 49 anos": 368,
+    "50 a 59 anos": 254,
+    "60 a 72 anos": 75
+  },
+  "distribuicao_escolaridade": {
+    "Médio Completo": 1634,
+    "Fundamental Incompleto": 125,
+    "Médio Incompleto": 106,
+    "Fundamental Completo": 73,
+    "Superior Completo": 34,
+    "Superior Incompleto": 29,
+    "Outros/EJA/Técnico": 4,
+    "Não Alfabetizado": 3
+  },
+  "distribuicao_cras": {
+    "ALTO": 460,
+    "SÃO PEDRO": 393,
+    "PRATA": 368,
+    "BONSUCESSO": 281,
+    "BARRA": 274,
+    "BARROSO": 116,
+    "MEUDON": 116
+  },
+  "top_5_bairros": {
+    "São Pedro": 348,
+    "Barra do Imbuí": 98,
+    "Bonsucesso": 85,
+    "Meudon": 79,
+    "Fonte Santa": 76
+  },
+  "distribuicao_lotacao_agrupada": {
+    "Escolas e Centros Educacionais": 984,
+    "Creches e CMEIs": 508,
+    "Secretarias e Órgãos Municipais": 363,
+    "Outras Entidades e Programas": 94,
+    "Assistência Social e CRAS": 59
+  },
+  "sexo_por_categoria_lotacao": {
+    "Feminino": {
+      "Escolas e Centros Educacionais": 915,
+      "Creches e CMEIs": 501,
+      "Secretarias e Órgãos Municipais": 139,
+      "Outras Entidades e Programas": 75,
+      "Assistência Social e CRAS": 40
+    },
+    "Masculino": {
+      "Secretarias e Órgãos Municipais": 224,
+      "Escolas e Centros Educacionais": 69,
+      "Outras Entidades e Programas": 19,
+      "Assistência Social e CRAS": 19,
+      "Creches e CMEIs": 7
+    }
+  },
+  "sexo_por_idade": {
+    "Feminino": {
+      "18 a 29 anos": 624,
+      "30 a 39 anos": 465,
+      "40 a 49 anos": 319,
+      "50 a 59 anos": 210,
+      "60 a 72 anos": 52
+    },
+    "Masculino": {
+      "18 a 29 anos": 148,
+      "30 a 39 anos": 74,
+      "40 a 49 anos": 49,
+      "50 a 59 anos": 44,
+      "60 a 72 anos": 23
+    }
+  }
+}
