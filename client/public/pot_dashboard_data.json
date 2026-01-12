@@ -45,26 +45,20 @@
     "Fonte Santa": 76
   },
   "distribuicao_lotacao_agrupada": {
-    "Escolas e Centros Educacionais": 984,
-    "Creches e CMEIs": 508,
-    "Secretarias e Órgãos Municipais": 363,
-    "Outras Entidades e Programas": 94,
-    "Assistência Social e CRAS": 59
+    "Escolas Públicas": 1476,
+    "Secretarias / Órgãos Públicos": 464,
+    "Órgãos Privados": 68
   },
   "sexo_por_categoria_lotacao": {
     "Feminino": {
-      "Escolas e Centros Educacionais": 915,
-      "Creches e CMEIs": 501,
-      "Secretarias e Órgãos Municipais": 139,
-      "Outras Entidades e Programas": 75,
-      "Assistência Social e CRAS": 40
+      "Escolas Públicas": 1400,
+      "Secretarias / Órgãos Públicos": 207,
+      "Órgãos Privados": 63
     },
     "Masculino": {
-      "Secretarias e Órgãos Municipais": 224,
-      "Escolas e Centros Educacionais": 69,
-      "Outras Entidades e Programas": 19,
-      "Assistência Social e CRAS": 19,
-      "Creches e CMEIs": 7
+      "Escolas Públicas": 76,
+      "Secretarias / Órgãos Públicos": 257,
+      "Órgãos Privados": 5
     }
   },
   "sexo_por_idade": {
