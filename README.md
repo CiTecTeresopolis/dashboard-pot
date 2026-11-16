@@ -26,3 +26,4 @@ O visitante pode selecionar o ano no cabeçalho; a seleção também é refletid
 - `npm run check` — checagem TypeScript
 - `npm run build` — build de produção
 
+
