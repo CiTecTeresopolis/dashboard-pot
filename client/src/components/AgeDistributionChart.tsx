@@ -17,8 +17,6 @@ interface AgeDistributionChartProps {
 export function AgeDistributionChart({ data }: AgeDistributionChartProps) {
   const allIdades = new Set<string>();
 
-  console.log("teste: ", data);
-
   Object.values(data).forEach(sexData => {
     Object.keys(sexData).forEach(age => {
       allIdades.add(age);
@@ -27,24 +25,15 @@ export function AgeDistributionChart({ data }: AgeDistributionChartProps) {
 
   const chartData = Array.from(allIdades)
     .map(idade => ({
-      idade: idade,
+      idade,
       fullName: idade,
       Masculino: data.Masculino?.[idade] || 0,
       Feminino: data.Feminino?.[idade] || 0,
     }))
     .filter(item => item.Masculino > 0 || item.Feminino > 0);
-  // .sort((a, b) => b.Masculino + b.Feminino - (a.Masculino + a.Feminino));
 
-  // const chartData = Object.entries(data)
-  //   .map(([age, count]) => ({
-  //     age: `${age} anos`,
-  //     count,
-  //   }))
-  //   .sort((a, b) => parseInt(a.age) - parseInt(b.age));
-
-  const CustomTooltip = ({ active, payload, label }: any) => {
+  const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
-      // payload[0].payload contém os dados completos do ponto (Masculino, Feminino, idade)
       const dataItem = payload[0].payload;
       const masculino = dataItem.Masculino || 0;
       const feminino = dataItem.Feminino || 0;
@@ -60,20 +49,9 @@ export function AgeDistributionChart({ data }: AgeDistributionChartProps) {
             color: "#000",
           }}
         >
-          {/* <p
-            className="label"
-            style={{ fontWeight: "bold" }}
-          >{`Idade: ${label}`}</p> */}
+          <p style={{ color: "#3b82f6" }}>{`Masculino: ${masculino} ${masculino == 1 ? "beneficiário" : "beneficiários"}`}</p>
+          <p style={{ color: "#ec4899" }}>{`Feminino: ${feminino} ${feminino == 1 ? "beneficiário" : "beneficiários"}`}</p>
           <p
-            className="intro"
-            style={{ color: "#3b82f6" }}
-          >{`Masculino: ${masculino} ${masculino == 1 ? "beneficiário" : "beneficiários"}`}</p>
-          <p
-            className="intro"
-            style={{ color: "#ec4899" }}
-          >{`Feminino: ${feminino} ${feminino == 1 ? "beneficiário" : "beneficiários"}`}</p>
-          <p
-            className="total"
             style={{
               color: "#585858",
               marginTop: "5px",
@@ -87,12 +65,11 @@ export function AgeDistributionChart({ data }: AgeDistributionChartProps) {
         </div>
       );
     }
-
     return null;
   };
 
   return (
-    <Card className="bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-100 border border-gray-100">
+    <Card className="bg-emerald-900/45 backdrop-blur-md border border-emerald-400/30 shadow-lg shadow-emerald-950/30">
       <CardHeader>
         <CardTitle className="text-lg font-semibold text-white">
           Distribuição por Idade
@@ -108,12 +85,9 @@ export function AgeDistributionChart({ data }: AgeDistributionChartProps) {
               textAnchor="end"
               height={80}
               tick={{ fill: "white" }}
-              label={"Idade"}
             />
             <YAxis tick={{ fill: "white" }} type="number" />
             <Tooltip content={<CustomTooltip />} />
-
-            {/* Adicionando a Legenda */}
             <Legend wrapperStyle={{ paddingTop: "10px" }} />
             <Bar dataKey="Masculino" fill="#3b82f6" radius={[0, 4, 4, 0]} />
             <Bar dataKey="Feminino" fill="#ec4899" radius={[0, 4, 4, 0]} />

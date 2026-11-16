@@ -22,7 +22,7 @@ export function CRASDistributionChart({ data }: CRASDistributionChartProps) {
     .sort((a, b) => b.count - a.count);
 
   return (
-    <Card className="bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-100 border border-gray-100">
+    <Card className="bg-emerald-900/45 backdrop-blur-md border border-emerald-400/30 shadow-lg shadow-emerald-950/30">
       <CardHeader>
         <CardTitle className="text-lg font-semibold text-white">
           Cobertura por CRAS

@@ -1,0 +1,11 @@
+﻿{
+  "defaultYear": 2025,
+  "years": [
+    {
+      "year": 2025,
+      "label": "2025",
+      "file": "/data/pot/2025.json",
+      "sourceUrl": "https://dados.teresopolis.rj.gov.br/dataset/beneficios-programa-operacao-trabalho/resource/ca191569-d7eb-4bf1-8d6c-5bc5ca499ec9"
+    }
+  ]
+}

@@ -16,11 +16,7 @@ interface AllocationChartProps {
 export function AllocationChart({ data }: AllocationChartProps) {
   const chartData = Object.entries(data)
     .map(([secretaria, count]) => ({
-      secretaria:
-        secretaria.length > 25
-          ? secretaria
-          : // ? secretaria.substring(0, 22) + "..."
-            secretaria,
+      secretaria: secretaria.length > 25 ? secretaria : secretaria,
       fullName: secretaria,
       count,
     }))
@@ -28,7 +24,7 @@ export function AllocationChart({ data }: AllocationChartProps) {
     .slice(0, 3);
 
   return (
-    <Card className="bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-100 border border-gray-100">
+    <Card className="bg-emerald-900/45 backdrop-blur-md border border-emerald-400/30 shadow-lg shadow-emerald-950/30">
       <CardHeader>
         <CardTitle className="text-lg font-semibold text-white">
           Alocação por Setor (Top 3)
@@ -52,7 +48,6 @@ export function AllocationChart({ data }: AllocationChartProps) {
             />
             <Tooltip
               formatter={value => `${value} beneficiários`}
-              // labelFormatter={label => `${label}`}
               contentStyle={{
                 backgroundColor: "#fff",
                 border: "1px solid #ccc",

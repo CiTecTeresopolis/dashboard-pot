@@ -1,8 +1,8 @@
 {
-  "total_participantes": 2008,
+  "total_participantes": 2046,
   "distribuicao_sexo": {
-    "Feminino": 1670,
-    "Masculino": 338
+    "Feminino": 1688,
+    "Masculino": 358
   },
   "idade_media": 35,
   "idade_minima": 18,
@@ -12,69 +12,69 @@
     "maxima": 72
   },
   "distribuicao_idade": {
-    "18 a 29 anos": 772,
-    "30 a 39 anos": 539,
-    "40 a 49 anos": 368,
-    "50 a 59 anos": 254,
-    "60 a 72 anos": 75
+    "18 a 29 anos": 782,
+    "30 a 39 anos": 552,
+    "40 a 49 anos": 375,
+    "50 a 59 anos": 261,
+    "60 a 72 anos": 76
   },
   "distribuicao_escolaridade": {
-    "Médio Completo": 1634,
-    "Fundamental Incompleto": 125,
-    "Médio Incompleto": 106,
-    "Fundamental Completo": 73,
-    "Superior Completo": 34,
+    "Médio Completo": 1655,
+    "Fundamental Incompleto": 130,
+    "Médio Incompleto": 107,
+    "Fundamental Completo": 82,
+    "Superior Completo": 36,
     "Superior Incompleto": 29,
     "Outros/EJA/Técnico": 4,
     "Não Alfabetizado": 3
   },
   "distribuicao_cras": {
-    "ALTO": 460,
-    "SÃO PEDRO": 393,
-    "PRATA": 368,
-    "BONSUCESSO": 281,
-    "BARRA": 274,
+    "ALTO": 466,
+    "SÃO PEDRO": 401,
+    "PRATA": 380,
+    "BONSUCESSO": 284,
+    "BARRA": 281,
     "BARROSO": 116,
-    "MEUDON": 116
+    "MEUDON": 118
   },
   "top_5_bairros": {
-    "São Pedro": 348,
-    "Barra do Imbuí": 98,
-    "Bonsucesso": 85,
-    "Meudon": 79,
-    "Fonte Santa": 76
+    "São Pedro": 356,
+    "Barra do Imbuí": 99,
+    "Bonsucesso": 87,
+    "Fonte Santa": 79,
+    "Meudon": 79
   },
   "distribuicao_lotacao_agrupada": {
-    "Escolas Públicas": 1476,
-    "Secretarias / Órgãos Públicos": 464,
-    "Órgãos Privados": 68
+    "Escolas Públicas": 1478,
+    "Secretarias / Órgãos Públicos": 494,
+    "Órgãos Privados": 74
   },
   "sexo_por_categoria_lotacao": {
     "Feminino": {
-      "Escolas Públicas": 1400,
-      "Secretarias / Órgãos Públicos": 207,
-      "Órgãos Privados": 63
+      "Escolas Públicas": 1401,
+      "Secretarias / Órgãos Públicos": 220,
+      "Órgãos Privados": 67
     },
     "Masculino": {
-      "Escolas Públicas": 76,
-      "Secretarias / Órgãos Públicos": 257,
-      "Órgãos Privados": 5
+      "Escolas Públicas": 77,
+      "Secretarias / Órgãos Públicos": 274,
+      "Órgãos Privados": 7
     }
   },
   "sexo_por_idade": {
     "Feminino": {
-      "18 a 29 anos": 624,
-      "30 a 39 anos": 465,
-      "40 a 49 anos": 319,
-      "50 a 59 anos": 210,
+      "18 a 29 anos": 629,
+      "30 a 39 anos": 471,
+      "40 a 49 anos": 320,
+      "50 a 59 anos": 216,
       "60 a 72 anos": 52
     },
     "Masculino": {
-      "18 a 29 anos": 148,
-      "30 a 39 anos": 74,
-      "40 a 49 anos": 49,
-      "50 a 59 anos": 44,
-      "60 a 72 anos": 23
+      "18 a 29 anos": 153,
+      "30 a 39 anos": 81,
+      "40 a 49 anos": 55,
+      "50 a 59 anos": 45,
+      "60 a 72 anos": 24
     }
   }
 }

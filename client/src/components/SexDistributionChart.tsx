@@ -25,7 +25,7 @@ export function SexDistributionChart({ data }: SexDistributionChartProps) {
   const COLORS = ["#ec4899", "#3b82f6"];
 
   return (
-    <Card className="bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-100 border border-gray-100">
+    <Card className="bg-emerald-900/45 backdrop-blur-md border border-emerald-400/30 shadow-lg shadow-emerald-950/30">
       <CardHeader>
         <CardTitle className="text-lg font-semibold text-white">
           Distribuição por Sexo
@@ -61,7 +61,7 @@ export function SexDistributionChart({ data }: SexDistributionChartProps) {
                 <Cell
                   key={`cell-${index}`}
                   fill={COLORS[index % COLORS.length]}
-                  strokeWidth={0} // Remove a borda branca padrão das fatias para ficar mais limpo
+                  strokeWidth={0}
                 />
               ))}
             </Pie>
@@ -70,8 +70,6 @@ export function SexDistributionChart({ data }: SexDistributionChartProps) {
               formatter={value => [`${value} beneficiários`]}
               contentStyle={{ borderRadius: "8px" }}
             />
-
-            {/* Adicionei wrapperStyle para garantir que a legenda também fique branca */}
             <Legend wrapperStyle={{ color: "#ffffff" }} />
           </PieChart>
         </ResponsiveContainer>

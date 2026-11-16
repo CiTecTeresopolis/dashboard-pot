@@ -15,7 +15,6 @@ interface SexAllocationChartProps {
 }
 
 export function SexAllocationChart({ data }: SexAllocationChartProps) {
-  // Processar dados para formato do gráfico
   const allSecretarias = new Set<string>();
 
   Object.values(data).forEach(sexData => {
@@ -26,11 +25,7 @@ export function SexAllocationChart({ data }: SexAllocationChartProps) {
 
   const chartData = Array.from(allSecretarias)
     .map(secretaria => ({
-      secretaria:
-        secretaria.length > 20
-          ? secretaria
-          : // ? secretaria.substring(0, 17) + "..."
-            secretaria,
+      secretaria: secretaria.length > 20 ? secretaria : secretaria,
       fullName: secretaria,
       Masculino: data.Masculino?.[secretaria] || 0,
       Feminino: data.Feminino?.[secretaria] || 0,
@@ -40,7 +35,7 @@ export function SexAllocationChart({ data }: SexAllocationChartProps) {
     .slice(0, 3);
 
   return (
-    <Card className="bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-100 border border-gray-100">
+    <Card className="bg-emerald-900/45 backdrop-blur-md border border-emerald-400/30 shadow-lg shadow-emerald-950/30">
       <CardHeader>
         <CardTitle className="text-lg font-semibold text-white">
           Distribuição por Sexo e Alocação
